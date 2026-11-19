@@ -1,0 +1,1 @@
+const t=document.getElementById('themeToggle'),r=document.documentElement;r.setAttribute('data-theme',localStorage.getItem('theme')||'dark');t.onclick=()=>{const n=r.getAttribute('data-theme')==='dark'?'light':'dark';r.setAttribute('data-theme',n);localStorage.setItem('theme',n)};
